@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container swiper mySwiper">
+     <div class="card_content swiper-wrapper">
+        <div class="cards swiper-slide">
+           <img src="./image/belt.jpg" alt=""> 
+           <div class="title">
+            <h2>Leather Belt</h2>
+           </div>
+           <div class="content">
+            <p>Black Leather Belt</p>
+            <div class="social_icons">
+                <i class="bx bxl-facebook-circle"></i>
+                <i class="bx bxl-twitter "></i>
+                <i class="bx bxl-linkedin "></i>
+                <i class="bx bxl-instagram-alt"></i>
+            </div>
+           </div>
+        </div>
+
+
+        <div class="cards swiper-slide">
+           <img src="./image/phone.jpg" alt=""> 
+           <div class="title">
+            <h2>Iphone 14 PromaX</h2>
+           </div>
+           <div class="content">
+            <p>HandSet</p>
+            <div class="social_icons">
+                <i class="bx bxl-facebook-circle"></i>
+                <i class="bx bxl-twitter "></i>
+                <i class="bx bxl-linkedin "></i>
+                <i class="bx bxl-instagram-alt"></i>
+            </div>
+           </div>
+        </div>
+
+
+        <div class="cards swiper-slide">
+           <img src="./image/shoe.jpg" alt=""> 
+           <div class="title">
+            <h2>Leather Shoe</h2>
+           </div>
+           <div class="content">
+            <p>Brown Leather Shoe</p>
+            <div class="social_icons">
+                <i class="bx bxl-facebook-circle"></i>
+                <i class="bx bxl-twitter "></i>
+                <i class="bx bxl-linkedin "></i>
+                <i class="bx bxl-instagram-alt"></i>
+            </div>
+           </div>
+        </div>
+
+        <div class="cards swiper-slide">
+           <img src="./image/snickers.jpg" alt=""> 
+           <div class="title">
+            <h2>Sneakers</h2>
+           </div>
+           <div class="content">
+            <p>Casual Shoe</p>
+            <div class="social_icons">
+                <i class="bx bxl-facebook-circle"></i>
+                <i class="bx bxl-twitter "></i>
+                <i class="bx bxl-linkedin "></i>
+                <i class="bx bxl-instagram-alt"></i>
+            </div>
+           </div>
+        </div>
+    </div>   
+    <div class="swiper-pagination"></div>
+    </div> 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          centeredSlides: true,
+          slidesPerGroupSkip: 1,
+          grabCursor: true,
+          keyboard: {
+            enabled: true,
+          },
+          breakpoints: {
+            769: {
+              slidesPerView: 4,
+              slidesPerGroup: 1,
+              loop:true,
+              fade:true,
+              grabCursor:true,
+            },
+          },
+          scrollbar: {
+            el: ".swiper-scrollbar",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints:{
+           0:{
+            slidesPerView:1,
+           },
+           768:{
+           slidesPerView:2,
+           },
+           968:{
+            slidesPerView:3,
+           },
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets:true,
+          },
+        });
+      </script>
+   <script src="./index.js"></script> 
+</body>
+</html>
